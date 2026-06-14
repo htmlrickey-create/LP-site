@@ -1,0 +1,305 @@
+/* リセット */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Yu Gothic", sans-serif;
+    background: #ffffff;
+    color: #333;
+    line-height: 1.8;
+    padding: 30px 15px;
+}
+
+/* タイトル */
+.title {
+    text-align: center;
+    font-size: 3rem;
+    color: #1e3a5f;
+    margin-bottom: 40px;
+}
+
+/* メインカード */
+.Mycard {
+    max-width: 1100px;
+    margin: auto;
+    box-shadow: 2px 4px 20px rgba(0, 255, 225, 0.08);
+}
+
+/* プロフィールカード */
+.Profilecard {
+    background: white;
+    border-radius: 15px;
+    padding: 35px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08); 
+}
+
+.Profilecard h2 {
+    color: #1e3a5f;
+    margin-bottom: 15px;
+    margin-top: 30px;
+    border-left: 5px solid #4a90e2;
+    padding-left: 10px;
+}
+
+/* リスト */
+.Profilecard ol,
+.language ul {
+    margin-left: 25px;
+}
+
+.Profilecard li {
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+/* 理由説明 */
+.Profilecard p {
+    margin: 15px 0;
+}
+
+/* もっと見るボタン */
+button {
+    margin-top: 10px;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    background: #4a90e2;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 15px;
+}
+
+button:hover {
+    background: #3574c4;
+    transform: translateY(-2px);
+}
+
+/* 開閉カード */
+.noneCard {
+    display: none;
+    background: #f8fbff;
+    border-left: 4px solid #4a90e2;
+    padding: 15px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+}
+
+/* 学習言語 */
+.language {
+    max-width: 1100px;
+    margin: 30px auto;
+    background: white;
+    border-radius: 15px;
+    padding: 35px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.language h2 {
+    color: #1e3a5f;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.language ul {
+    list-style: none;
+}
+
+.language li {
+    background: #f4f8ff;
+    margin-bottom: 12px;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.language li:hover {
+    transform: translateX(5px);
+    background: #e8f1ff;
+    cursor: pointer;
+}
+
+.language i {
+    margin-left: 8px;
+    color: #4a90e2;
+}
+
+.language p  {
+    font-size: 12px;
+    color: black;
+}
+
+.languageH2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.github-section {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.github-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.github-container {
+    display: flex;
+    gap: 20px;
+}
+
+.github-card {
+    flex: 1;
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.github-card:hover {
+    transform: translateY(-5px);
+}
+
+.github-card h3 {
+    margin-bottom: 15px;
+    color: #1e3a5f;
+}
+
+.github-card p {
+    margin-bottom: 15px;
+}
+
+.github-card ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.github-card li {
+    background: #f4f8ff;
+    margin-bottom: 8px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.github-card a {
+    display: inline-block;
+    text-decoration: none;
+    background: #24292e;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.github-card a:hover {
+    background: #444;
+}
+
+
+/*学習記録*/
+.update {
+    display: flex;
+    gap: 20px;
+}
+
+.update ul{
+  list-style: none; 
+  padding-left: 0; 
+  margin: 0;        
+}
+
+
+.update li {
+    background: #f4f8ff;
+    margin-bottom: 12px;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.update li:hover {
+    transform: translateX(5px);
+    background: #ffe8e8;
+}
+
+.update-report {
+    flex:1;
+    border: 0px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(2, 252, 252, 0.08);
+}
+
+/* =========================
+   スマホ対応強化版
+========================= */
+@media (max-width: 768px) {
+
+    body {
+        padding: 15px 10px;
+    }
+
+    /* タイトル */
+    .title {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    /* カード系 */
+    .Mycard,
+    .Profilecard,
+    .language,
+    .github-section {
+        width: 100%;
+        margin: 0 auto;
+        padding: 15px;
+    }
+
+    /* テキスト調整 */
+    .Profilecard p,
+    .Profilecard li,
+    .language li {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    /* ボタン */
+    button {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    /* GitHubカードを縦並び */
+    .github-container {
+        flex-direction: column;
+    }
+
+    .github-card {
+        width: 100%;
+    }
+
+    /* 学習更新部分 */
+    .update {
+        flex-direction: column;
+    }
+
+    .update-report {
+        width: 100%;
+    }
+
+    .update li {
+        font-size: 14px;
+        padding: 12px;
+    }
+}
